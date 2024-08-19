@@ -4,3 +4,5 @@ const newClub = ['Birmingham', 'Millwall', 'Madrid', 'Barca', 'Salzburg', 'City'
 const transferFee = ['20mil', '20k', '450k', 30, '150mil', '1mil', '1k', '35mil', '75k']
 
 // 3 sentences needed - how do I store these?
+
+// Need to create variables that hold the randomised value derived from each array. Than need to create sentences using these new variables.
