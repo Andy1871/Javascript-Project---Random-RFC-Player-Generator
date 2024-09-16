@@ -1,79 +1,26 @@
-// ---- TESTING
+const players = ['Sam Smith', 'Kelvin E', 'Lewis Wing', 'Tyler Bindon', 'Harvey Knibbs', 'Joel Perreira', 'Andy Yiadom', 'Femi Azeez', 'Amadou Mbengue', 'Jeriel Dorsett'];
+const newClubs = ['Birmingham', 'Millwall', 'Madrid', 'Barca', 'Salzburg', 'City', 'United', 'Laurel Park']
+const transferFees = ['20mil', '20k', '450k', '150mil', '1mil', '1k', '35mil', '75k']
+
+// function to generate a random word from an array
+
+function getRandomElement(array) {
+   return array[Math.floor(Math.random() * array.length)] 
+}
+
+// function to generate words from specified arrays, and to put these into the final sentence
+
+function generateMysterySentence() {
+  const player = getRandomElement(players);
+  const newClub = getRandomElement(newClubs);
+  const transferFee = getRandomElement(transferFees);
 
 
-const player = ['Sam Smith', 'Kelvin E', 'Lewis Wing', 'Tyler Bindon', 'Harvey Knibbs', 'Joel Perreira', 'Andy Yiadom', 'Femi Azeez', 'Amadou Mbengue', 'Jeriel Dorsett'];
-const newClub = ['Birmingham', 'Millwall', 'Madrid', 'Barca', 'Salzburg', 'City', 'United', 'Laurel Park']
-const transferFee = ['20mil', '20k', '450k', 30, '150mil', '1mil', '1k', '35mil', '75k']
-
-// 3 sentences needed - how do I store these?
-
-/* Need to create variables that hold the randomised value derived from each array. 
-Than need to create sentences using these new variables. */
-
-const randomPlayer = [(Math.floor(Math.random() * player.length))]
-const randomNewClub = [(Math.floor(Math.random() * newClub.length))]
-const randomTransferFee = [(Math.floor(Math.random() * transferFee.length))]
-
-console.log(randomPlayer)
-
-// let generator = [] // code below needs to somehow create the three sentences separately. formatGenerator then joins them
+const sentence = `Your player is ${player} and you are transferring to ${newClub} for ${transferFee}.`
+return sentence
+}
 
 
-// MISSING CODE HERE 
-
-/*
-const formatGenerator(player) {
-    const formatted = generator.join('\n')
-    console.log(formatted)
-  };
-
-  formatGenerator(generator); 
-
-  */
-
-/* ---------------- EXAMPLE CODE BELOW ------------
+console.log(generateMysterySentence())
 
 
- function generateRandomNumber(num) {
-    // Gets # from 0 -> num - 1
-    return Math.floor(Math.random() * num)
-  }
-  
-  const collectiveWisdom = {
-    signInfo: ['star', 'moon', 'sun', 'comet'],
-    fortuneOutput: ['terrible luck', 'bad luck', 'ok luck', 'good luck', 'great luck'],
-    advice: ['go out and eat', 'not read this', 'play more', 'trust no one']
-  }
-  
-  // Store the 'wisdom' in an array
-  let personalWisdom = []
-  
-  // Iterate over the object
-  for(let prop in collectiveWisdom) {
-    let optionIdx = generateRandomNumber(collectiveWisdom[prop].length)
-  
-    // use the object's properties to customize the message being added to personalWisdom  
-    switch(prop) {
-      case 'signInfo':
-        personalWisdom.push(`Your sign right now is a "${collectiveWisdom[prop][optionIdx]}".`)
-        break
-      case 'fortuneOutput':
-        personalWisdom.push(`You are having: "${collectiveWisdom[prop][optionIdx]}".`)
-        break
-      case 'advice':
-        personalWisdom.push(`You should: "${collectiveWisdom[prop][optionIdx]}".`)
-        break
-      default:
-        personalWisdom.push('There is not enough info.')
-    }
-  }
-  
-  function formatWisdom(wisdom) {
-    // Add some ASCII here?
-    // Add in more symbols to the array? like emojies or what not?
-    const formatted = personalWisdom.join('\n')
-    console.log(formatted)
-  }
-  
-  formatWisdom(personalWisdom); 
-  */
