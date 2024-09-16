@@ -2,7 +2,6 @@
 
 
 const player = ['Sam Smith', 'Kelvin E', 'Lewis Wing', 'Tyler Bindon', 'Harvey Knibbs', 'Joel Perreira', 'Andy Yiadom', 'Femi Azeez', 'Amadou Mbengue', 'Jeriel Dorsett'];
-const goals = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
 const newClub = ['Birmingham', 'Millwall', 'Madrid', 'Barca', 'Salzburg', 'City', 'United', 'Laurel Park']
 const transferFee = ['20mil', '20k', '450k', 30, '150mil', '1mil', '1k', '35mil', '75k']
 
@@ -12,16 +11,17 @@ const transferFee = ['20mil', '20k', '450k', 30, '150mil', '1mil', '1k', '35mil'
 Than need to create sentences using these new variables. */
 
 const randomPlayer = [(Math.floor(Math.random() * player.length))]
-const randomGoals = [(Math.floor(Math.random() * goals.length))]
 const randomNewClub = [(Math.floor(Math.random() * newClub.length))]
 const randomTransferFee = [(Math.floor(Math.random() * transferFee.length))]
 
-let generator = [] // code below needs to somehow create the three sentences separately. formatGenerator then joins them
+console.log(randomPlayer)
+
+// let generator = [] // code below needs to somehow create the three sentences separately. formatGenerator then joins them
 
 
 // MISSING CODE HERE 
 
-
+/*
 const formatGenerator(player) {
     const formatted = generator.join('\n')
     console.log(formatted)
@@ -29,7 +29,9 @@ const formatGenerator(player) {
 
   formatGenerator(generator); 
 
-// ---------------- EXAMPLE CODE BELOW ------------
+  */
+
+/* ---------------- EXAMPLE CODE BELOW ------------
 
 
  function generateRandomNumber(num) {
@@ -74,3 +76,4 @@ const formatGenerator(player) {
   }
   
   formatWisdom(personalWisdom); 
+  */
